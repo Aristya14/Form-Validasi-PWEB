@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validasi Mahasiswa</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="script.js"></script>
+</head>
+
+<body background="https://www.mercuryit.com.au/wp-content/uploads/2018/01/why-mercury-it-background@2x.jpg">
+    <header style="background-color: black;">
+        <img src="https://docplayer.info/docs-images/113/206595632/images/1-0.jpg" alt="home" width="50" height="50">
+    </header>
+
+    <div class="container">
+    </br>
+        <h2 style="text-align: center;">Form Validasi Pembelajaran Tatap Muka</h2>
+        <h2 style="text-align: center;">Mahasiswa FTEIC</h2>
+        <form name="formValidasi" onsubmit="return validateForm()" class="pt-2">
+            <div class="form-group">
+                <label class="font-weight-bold">Nama</label>
+                <input type="text" name="nama" placeholder="Nama lengkap" class="form-control" maxlength="50">
+            </div>
+
+            <div class="form-group">
+                <label class="font-weight-bold">NRP</label>
+                <input type="text" name="nrp" placeholder="05xxxxxxxxxx" class="form-control" minlength="8"
+                    maxlength="16">
+            </div>
+
+            <div class="form-group">
+                <label class="font-weight-bold">Email</label>
+                <input type="email" name="email" placeholder="akun@gmail.com" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label class="font-weight-bold">Domisili</label>
+                <input type="text" name="domisili" placeholder="Surabaya, Jawa Timur" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label class="font-weight-bold">Jurusan</label>
+                <select name="jurusan" class="form-control">
+                    <option selected>- Pilih Jurusan</option>
+                    <option value="1">Teknik Elektro</option>
+                    <option value="2">Teknik Biomedik</option>
+                    <option value="3">Teknik Komputer</option>
+                    <option value="4">Teknik Informatika</option>
+                    <option value="5">Sistem Informasi</option>
+                    <option value="6">Teknologi Informasi</option>
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="font-weight-bold">Status Vaksin</label>
+                <select name="status_vaksin" class="form-control">
+                    <option selected>- Pilih Status</option>
+                    <option value="1">Belum Vaksin</option>
+                    <option value="2">Sudah Vaksin - Dosis 1</option>
+                    <option value="3">Sudah Vaksin - Dosis 2</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Kesediaan</label>
+                <select name="Kesediaan" class="form-control">
+                    <option value="0">Kesediaan Kuliah</option>
+                    <option value="1">Bersedia tatap muka</option>
+                    <option value="2">Bersedia Daring</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="font-weight-light text-center p-4">
+            Institut Teknologi Sepuluh Nopember
+        </div>
+    </footer>
+</body>
+
+</html>
